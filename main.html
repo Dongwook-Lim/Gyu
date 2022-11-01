@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대체포털</title>
+    <style>
+      img {
+        width: 100%;
+      }
+
+      .button {
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .button:hover {
+        cursor: pointer;
+      }
+
+      .certi-btn {
+        top: 13px;
+        right: 125px;
+      }
+
+      .cancel-btn {
+        top: 13px;
+        right: 9px;
+      }
+
+      .box {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        text-align: center;
+        font-family: 'KoPub Dotum', Metropolis, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+
+      .month-box {
+        top: 467px;
+        left: 237px;
+        font-size: 19px;
+        font-weight: 250;
+      }
+
+      .day-box {
+        top: 463px;
+        left: 272px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/main.jpg" alt="main" />
+    <div class="button certi-btn"></div>
+    <div class="button cancel-btn"></div>
+    <div class="box month-box"></div>
+    <div class="box day-box"></div>
+
+    <script>
+      const certiBtn = document.querySelector('.certi-btn');
+      const cancelBtn = document.querySelector('.cancel-btn');
+      const img = document.querySelector('img');
+      const monthBox = document.querySelector('.month-box');
+      const dayBox = document.querySelector('.day-box');
+
+      let today = new Date();
+      let month = today.getMonth() + 1;
+      let day = today.getDate();
+
+      certiBtn.addEventListener('click', () => {
+        img.src = 'img/certification.jpg';
+        monthBox.innerText = month;
+        dayBox.innerText = day;
+      });
+
+      cancelBtn.addEventListener('click', () => {
+        img.src = 'img/main.jpg';
+        monthBox.innerText = '';
+        dayBox.innerText = '';
+      });
+    </script>
+  </body>
+</html>
