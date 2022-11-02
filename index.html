@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대체포털</title>
     <style>
+      body {
+        margin: 0;
+      }
+
       img {
         width: 100%;
       }
 
       .button {
         background-color: transparent;
-        width: 50px;
-        height: 50px;
+        width: 12vw;
+        height: 12vw;
         position: absolute;
         border-radius: 50%;
       }
@@ -23,18 +27,16 @@
       }
 
       .certi-btn {
-        top: 13px;
-        right: 125px;
+        top: 1.3vw;
+        left: 58.2vw;
       }
 
       .cancel-btn {
-        top: 13px;
-        right: 9px;
+        top: 1.3vw;
+        right: 0.5vw;
       }
 
       .box {
-        width: 30px;
-        height: 30px;
         position: absolute;
         text-align: center;
         font-family: 'KoPub Dotum', Metropolis, -apple-system,
@@ -44,16 +46,17 @@
       }
 
       .month-box {
-        top: 467px;
-        left: 237px;
-        font-size: 19px;
+        top: 117.4vw;
+        left: 55.5vw;
+        font-size: 5vw;
         font-weight: 250;
       }
 
       .day-box {
-        top: 463px;
-        left: 272px;
-        font-size: 24px;
+        top: 114vw;
+        left: 62.5vw;
+        font-size: 9vw;
+        font-weight: 500;
       }
     </style>
   </head>
@@ -77,8 +80,8 @@
 
       certiBtn.addEventListener('click', () => {
         img.src = 'img/certification.jpg';
-        monthBox.innerText = month;
-        dayBox.innerText = day;
+        monthBox.innerText = `${month < 10 ? '0' + month : month}` + '.';
+        dayBox.innerText = `${day < 10 ? '0' + day : day}` + '.';
       });
 
       cancelBtn.addEventListener('click', () => {
