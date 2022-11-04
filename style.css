@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.dark-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes transform {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+.button {
+  background-color: transparent;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.certi-btn {
+  top: 1.3vw;
+  left: 58.2vw;
+}
+
+.cancel-btn {
+  top: 1.3vw;
+  right: 0.5vw;
+}
+
+.box {
+  position: absolute;
+  text-align: center;
+  font-family: 'KoPub Dotum', Metropolis, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.month-box {
+  top: 117.4vw;
+  left: 55.5vw;
+  font-size: 5vw;
+  font-weight: 250;
+}
+
+.day-box {
+  top: 114vw;
+  left: 62.5vw;
+  font-size: 9vw;
+  font-weight: 500;
+}
