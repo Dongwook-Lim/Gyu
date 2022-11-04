@@ -16,7 +16,6 @@ certiBtn.addEventListener('click', () => {
   setTimeout(() => {
     img.src = 'img/certification.jpg';
     darkScreen.style.zIndex = -1;
-    img.style.animation = 'opacity 300ms ease';
     img.style.animation = 'transform 300ms ease';
   }, 250);
   setTimeout(() => {
