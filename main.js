@@ -22,7 +22,7 @@ certiBtn.addEventListener('click', () => {
     monthBox.innerText = `${month < 10 ? '0' + month : month}` + '.';
     dayBox.innerText = `${day < 10 ? '0' + day : day}` + '.';
     dateBox.style.animation = 'opacity2 300ms ease';
-  }, 350);
+  }, 300);
 });
 
 cancelBtn.addEventListener('click', () => {
