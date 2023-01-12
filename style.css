@@ -61,6 +61,11 @@ img {
   left: 58.2vw;
 }
 
+.id-btn {
+  top: 1.3vw;
+  left: 72vw;
+}
+
 .cancel-btn {
   top: 1.3vw;
   right: 0.5vw;
@@ -74,16 +79,16 @@ img {
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-.month-box {
+.yearMonth-box {
   top: 117.4vw;
-  left: 55.5vw;
+  left: 48vw;
   font-size: 5vw;
   font-weight: 250;
 }
 
 .day-box {
   top: 114vw;
-  left: 62.5vw;
+  left: 63vw;
   font-size: 9vw;
   font-weight: 500;
 }
